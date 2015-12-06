@@ -1,2 +1,10 @@
 <h1 style="color:red">This is my static test page</h1>
 <%= link_to "Add new page", new_page_path %>
+<br /><br />
+
+<% @pages.each do |page| %>
+	<h1><%= link_to page.name, page_path(page) %></h1>
+	<h3><%= page.author %></h3><br />
+	<i><%= page.category %></i>
+	<br /><br />
+<% end %> 
