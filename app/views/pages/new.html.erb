@@ -1,0 +1,9 @@
+<h1>Enter Contents of Your Page Below</h1>
+<%= simple_form_for @page do |f| %>
+	<%= f.input :name %>
+	<%= f.input :category %>
+	<%= f.input :author %>
+	<%= f.input :content %>
+	<br />
+	<%= f.submit 'Create' %>
+<% end %>
